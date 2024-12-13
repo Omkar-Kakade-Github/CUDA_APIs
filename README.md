@@ -1,8 +1,6 @@
 # CUDA API 
 > Includes cuBLAS, cuDNN, cuBLASmp
 
-- the term “API” can be confusing at first. all this mean is we have a library where we can’t see the internals. there is documentation on the function calls within the API, but its a precompiled binary that doesn’t expose source code. the code is highly optimized but you can’t see it. (keep this here as it universally applies to all the libs/APIs listed below)
-
 ## Opaque Struct Types (CUDA API):
 - you cannot see or touch the internals of the type, just external like names, function args, etc. `.so` (shared object) file referenced as an opaque binary to just run the compiled functions at high throughput. If you search up cuFFT, cuDNN, or any other CUDA extension, you will notice it comes as an API, the inability to see through to the assembly/C/C++ source code refers to usage of the word “opaque”. the struct types are just a general type in C that allows NVIDIA to build the ecosystem properly. cublasLtHandle_t is an example of an opaque type containing the context for a cublas Lt operation
 
