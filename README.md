@@ -1,16 +1,6 @@
 # CUDA API 
 > Includes cuBLAS, cuDNN, cuBLASmp
 
-## Opaque Struct Types (CUDA API):
-- you cannot see or touch the internals of the type, just external like names, function args, etc. `.so` (shared object) file referenced as an opaque binary to just run the compiled functions at high throughput. If you search up cuFFT, cuDNN, or any other CUDA extension, you will notice it comes as an API, the inability to see through to the assembly/C/C++ source code refers to usage of the word “opaque”. the struct types are just a general type in C that allows NVIDIA to build the ecosystem properly. cublasLtHandle_t is an example of an opaque type containing the context for a cublas Lt operation
-
-If you’re trying to just figure out how to get the fastest possible inference to work on your cluster, you will need to understand the details under the hood. To navigate the CUDA API, I’d recommend using the following tricks:
-1. [perplexity.ai](http://perplexity.ai) (most up to date information and will fetch data in real time)
-2. google search (arguably worse than perplexity but its alright to take the classic approach to figuring things out)
-3. chatGPT for general knowledge that’s less likely to be past its training cutoff
-4. keyword search in nvidia docs
-
-
 ## Error Checking (API Specific)
 
 - cuBLAS for example
