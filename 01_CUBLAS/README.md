@@ -32,8 +32,6 @@ Choose XT for large-scale linear algebra that exceeds GPU memory
 
 ## cuBLASDx
 
-Highlight that we **ARE NOT** using this in the course
-
 The cuBLASDx library (preview) is a device side API extension for performing BLAS calculations inside CUDA kernels. By fusing numerical operations you can decrease latency and further improve performance of your applications.
 
 - You can access cuBLASDx documentation [here](https://docs.nvidia.com/cuda/cublasdx).
